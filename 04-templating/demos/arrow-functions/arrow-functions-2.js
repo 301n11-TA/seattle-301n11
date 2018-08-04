@@ -4,7 +4,8 @@ let logMessage = function(input) {
 }
 
 // Refactor into an arrow function
-let logMessage = function(input) {
+// One parameter doesn't need parens
+let logMessage = input => {
   console.log(input);
 }
 
@@ -30,7 +31,7 @@ adder(3, 7);
 
 
 // Multi-line function
-let multiLine = function(a, b) {
+let multiLine = (a, b) => {
   console.log(a);
   console.log(b);
   return a * b;
@@ -49,7 +50,7 @@ multiLine(3, 4);
 
 
 // Function which returns an object literal
-let returnObjLit = function() {
+let returnObjLit = () => {
   return {
     key1: 1,
     key2: 2
