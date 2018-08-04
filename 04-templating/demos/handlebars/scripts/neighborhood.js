@@ -3,6 +3,7 @@
 let neighborhoods = [];
 
 // REVIEW: This is another way to use a constructor to duplicate an array of raw data objects
+// can't be changed to an arrow function because it is a constructor and contextual this would not work.
 function Neighborhood (rawDataObject) {
   for (let key in rawDataObject) {
     this[key] = rawDataObject[key];
