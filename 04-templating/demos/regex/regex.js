@@ -1,39 +1,39 @@
-GREAT Resource for playing around and learning RegEx
-https://regex101.com/
+// GREAT Resource for playing around and learning RegEx
+// https://regex101.com/
 
-Pattern match text
-[a-zA-Z] -> match any one character, upper case or lower case, order doesn’t matter
-Shorthand: \w
-
-
-Validate lower case character followed by whitespace
-[a-z]\s
+// Pattern match text
+// [a-zA-Z] -> match any one character, upper case or lower case, order doesn’t matter
+// Shorthand: \w
 
 
-Optional group
-Dec(ember)?   // this will match Dec or December
+// Validate lower case character followed by whitespace
+// [a-z]\s
 
 
-Pattern match numbers
-[0-4]   // will limit to range
-[0-9]   // matches any number, 0-9
-Shorthand for all digits:  \d
+// Optional group
+// Dec(ember)?   // this will match Dec or December
 
 
-Validate phone numbers
-\([0-9]+\) -> will match any character 0-9, any quantity, within parens
-\([0-9]{3}\) -> will limit to three characters, can specify ending num
-\(\d{3}\) -> shorthand for any digit, [0-9]
-? makes it optional
+// Pattern match numbers
+// [0-4]   // will limit to range
+// [0-9]   // matches any number, 0-9
+// Shorthand for all digits:  \d
 
 
-(555) 555-5555    \(\d{3}\)\s\d{3}-\d{4}
-555 555-5555      \(?\d{3}\)?\s\d{3}-\d{4}
-555-555-5555      \(?\d{3}\)?-?\s?\d{3}-\d{4}
-555 555 5555      \(?\d{3}\)?-?\s?\d{3}-?\s?\d{4}
-5555555555        \(?\d{3}\)?-?\s?\d{3}-?\s?\d{4}
+// Validate phone numbers
+// \([0-9]+\) -> will match any character 0-9, any quantity, within parens
+// \([0-9]{3}\) -> will limit to three characters, can specify ending num
+// \(\d{3}\) -> shorthand for any digit, [0-9]
+// ? makes it optional
 
 
-Validate email addresses
-allie@codefellows.com           \w+@\w+\.\w+
-allie.grampa@codefelllows.com   \w+\.?\w+?@\w+\.\w+
+// (555) 555-5555    \(\d{3}\)\s\d{3}-\d{4}
+// 555 555-5555      \(?\d{3}\)?\s\d{3}-\d{4}
+// 555-555-5555      \(?\d{3}\)?-?\s?\d{3}-\d{4}
+// 555 555 5555      \(?\d{3}\)?-?\s?\d{3}-?\s?\d{4}
+// 5555555555        \(?\d{3}\)?-?\s?\d{3}-?\s?\d{4}
+
+
+// Validate email addresses
+// allie@codefellows.com           \w+@\w+\.\w+
+// allie.grampa@codefelllows.com   \w+\.?\w+?@\w+\.\w+
